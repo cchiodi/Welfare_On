@@ -1,0 +1,175 @@
+{
+	"users" : [
+		{
+			"id": 0,
+			"email": "prova@prova.it",
+			"password": "123asd??A",
+			"name" : "Pinco",
+			"last_name" : "Pallino",
+			"birthdate" : null,
+			"address" : "",
+			"phone_number" : "",
+			"marital_status" : "",
+			"hasChildren" : false,
+			"hasElders" : false
+		}
+	],
+	"services" : [
+		{
+			"id": 0,
+			"name": "sottoservizio0",
+			"category": "Benessere Fisico",
+			"categoryId": 0,
+			"subcategoryId": 0,
+			"dataStart" : 1719123999,
+			"dataEnd" : 1719555999,
+			"description" : "prova",
+			"imgUrl" : "https://retailminded.com/wp-content/uploads/2019/07/promotions-min-copy.jpg",
+			"pdfUrl" : "https://www.google.it",
+			"color" : "#ff0000"
+		},
+		{
+			"id": 1,
+			"name": "sottoservizio1",
+			"category": "Benessere Fisico",
+			"categoryId": 0,
+			"subcategoryId": 1,
+			"dataStart" : 1719123999,
+			"dataEnd" : 1719555999,
+			"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"imgUrl" : "",
+			"pdfUrl" : "https://www.google.it",
+			"color" : "#ff0000"
+		},
+		{
+			"id": 2,
+			"name": "sottoservizio2",
+			"category": "Benessere Psicologico",
+			"categoryId": 1,
+			"subcategoryId": 2,
+			"dataStart" : 1719123999,
+			"dataEnd" : 1719555999,
+			"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"imgUrl" : "https://retailminded.com/wp-content/uploads/2019/07/promotions-min-copy.jpg",
+			"pdfUrl" : "https://www.google.it",
+			"color" : "#008000"
+		},
+		{
+			"id": 3,
+			"name": "sottoservizio3",
+			"category": "Benessere Psicologico",
+			"categoryId": 1,
+			"subcategoryId": 3,
+			"dataStart" : 1719123999,
+			"dataEnd" : 1719555999,
+			"description" : "prova",
+			"imgUrl" : "",
+			"pdfUrl" : "https://www.google.it",
+			"color" : "#008000"
+		},
+		{
+			"id": 4,
+			"name": "sottoservizio4",
+			"category": "Benessere Familiare",
+			"categoryId": 2,
+			"subcategoryId": 3,
+			"dataStart" : 1719123999,
+			"dataEnd" : 1719555999,
+			"description" : "prova",
+			"imgUrl" : "https://retailminded.com/wp-content/uploads/2019/07/promotions-min-copy.jpg",
+			"pdfUrl" : "https://https://www.google.it",
+			"color" : "#0000ff"
+		},
+		{
+			"id": 5,
+			"name": "sottoservizio5",
+			"category": "Benessere Economico",
+			"categoryId": 3,
+			"subcategoryId": 10,
+			"dataStart" : 1719123999,
+			"dataEnd" : 1719555999,
+			"description" : "prova",
+			"imgUrl" : "https://retailminded.com/wp-content/uploads/2019/07/promotions-min-copy.jpg",
+			"pdfUrl" : "https://https://www.google.it",
+			"color" : "#ffffff"
+		}
+	],
+	"categories": [
+		{
+			"id": 0,
+			"name": "Benessere Fisico",
+			"color": "#ff0000",
+			"subcategories": [
+				{
+					"id": 3,
+					"name": "subcategory A"
+				},
+				{
+					"id": 4,
+					"name": "subcategory B"
+				},
+				{
+					"id": 5,
+					"name": "subcategory C"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Benessere Psicologico",
+			"color": "#008000",
+			"subcategories": [
+				{
+					"id": 0,
+					"name": "subcategory A"
+				},
+				{
+					"id": 1,
+					"name": "subcategory B"
+				},
+				{
+					"id": 2,
+					"name": "subcategory C"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Benessere Familiare",
+			"color": "#0000ff",
+			"subcategories": [
+				{
+					"id": 6,
+					"name": "subcategory A"
+				},
+				{
+					"id": 7,
+					"name": "subcategory B"
+				},
+				{
+					"id": 8,
+					"name": "subcategory C"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "Benessere Economico",
+			"color": "#ffffff",
+			"subcategories": [
+				{
+					"id": 9,
+					"name": "subcategory A"
+				},
+				{
+					"id": 10,
+					"name": "subcategory B"
+				},
+				{
+					"id": 11,
+					"name": "subcategory C"
+				}
+				]
+		}
+	]
+}

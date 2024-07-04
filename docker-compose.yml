@@ -1,0 +1,56 @@
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    container_name: backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    volumes:
+      - ./backend:/app
+    command: sh -c "python3 manage.py makemigrations && python3 manage.py migrate --noinput && python3 manage.py load_db && python manage.py runserver 0.0.0.0:5000"
+    environment:
+      Flask_DEBUG: 1
+      FLASK_ENV: development
+      MYSQL_HOST: db
+      MYSQL_USER: flo-dolc
+      MYSQL_PASSWORD: Password12!
+      MYSQL_DATABASE: leodb
+    ports:
+      - "5000:5000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: mysql:8.0
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: Password12!
+      MYSQL_DATABASE: leodb
+      MYSQL_USER: flo-dolc
+      MYSQL_PASSWORD: Password12!
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      # - ./db:/docker-entrypoint-initdb.d/:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  mysql-data:

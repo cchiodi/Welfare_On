@@ -1,0 +1,44 @@
+.registrationPage {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	min-height: 100vh;
+	overflow: auto;
+}
+
+.scrollContainer {
+	overflow: hidden;
+	width: 100vw;
+}
+
+.scrollContent {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	width: 300vw;
+}
+
+.dataInputBox {
+	display: flex;
+	justify-content: center;
+	border-radius: 20px;
+	width: 100vw;
+	color: gray;
+	padding: 20px;
+}
+
+.maxFourInputsGroup {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px;
+	width: 250px;
+}
+
+.returnButton {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}

@@ -1,0 +1,18 @@
+
+
+Leonardo Summer Camp  - "Hai figli dai 6 ai 17 anni?" - Figli (True / False)
+Leonardo Care         - "Hai genitori anziani a carico?" - Anziani (True / False)
+
+
+4Books                - x "Ti piace leggere?" / "Quanto ti piace leggere da 1 a 10?"
+Stimulus (psychology) - x "Quanto saresti interessato ad un supporto psicologico da 1 a 10?"
+JoJob                 - x "Quanto sei interessato ad un app di mobilità sostenibile?"
+Flexible Benefits     - x "Quanto saresti interessato ai nostri flexible benefits?"
+Agreements            - x "Quanto sei interessato ai nostri Corporate Benefits?"
+(Corporate benefits)
+WellHub (GymPass)     - x "Quanto sei interessato a conoscere le palestre e i corsi vicino a te?"
+
+
+
+Salute Fisica (WellHub) / Salute Mentale (4 Books/Stimulus) / 
+Mobilità Sostenibile (JoJob) / Investimento e Risparmi (Flexible Benefits - Corporate Benefits)

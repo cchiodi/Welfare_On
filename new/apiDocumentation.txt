@@ -1,0 +1,74 @@
+route "/user/login"
+	method : GET
+		1 : email
+		2 : password
+	return json({'message': 'User logged in sucessfully', 'jwt': token})
+		
+
+route "/homepage"
+	method : GET
+		jwt : token
+		return json({"WellHub": valore_WellHub, "4Books": valore_4Books, "Stimulus": valore_Stimulus, "JoJob": valore_JoJob, "FlexibleBenefits": valore_FlexibleBenefits, "Agreements": Valore_Agreements})
+
+
+route "/user/register"
+	method : POST
+		name : string
+		last_name : string
+		birthdate : DATE
+		email : string
+		password : string
+		address : string
+		phone_number : string
+		marital_status : string
+		haschildren : Boolean
+		haselders : Boolean
+	return json({'message': 'User registered successfully', 'jwt' : token })
+
+
+route "/user/register/areaOfInterest"
+	method : GET
+		return json(areas)
+	es:
+	[
+		[1 "Salute Fisica"]
+		[2 "Salute Mentale"]
+		[3 "Mobilità Sostenible"]
+		[4 "Investimento e Risparmi"]
+	]
+	method : POST
+		"jwt" : token
+		"1 Salute Fisica" : int
+		"2 Salute Mentale" : int
+		"3 Mobilità Sostenibile" : int
+		"4 Investimenti e Risparmi" : int
+	return jsonify({'message': 'Area of interest inserted successfully'})
+
+
+route "/user/register/interest"
+	method : GET
+		return json(interests)
+	es:
+	[
+		[1 "Quanto ti piace leggere da 1 a 10?"]
+		[2 "Quanto saresti interessato ad un supporto psicologico da 1 a 10?"]
+		[3 "Quanto sei interessato ad un app di mobilità sostenibile?"]
+		[4 "Quanto saresti interessato ai nostri flexible benefits?"]
+		[5 "Quanto sei interessato ai nostri Corporate Benefits?"]
+		[6 "Quanto sei interessato a conoscere le palestre e i corsi vicino a te?"]
+	]
+	method : POST
+		"jwt" : token
+		"1 Quanto ti piace leggere da 1 a 10?" : int
+		"2 Quanto saresti interessato ad un supporto psicologico da 1 a 10?" : int
+		"3 Quanto sei interessato ad un app di mobilità sostenibile?" : int
+		"4 Quanto saresti interessato ai nostri flexible benefits?" : int
+		"5 Quanto sei interessato ai nostri Corporate Benefits?" : int
+		"6 Quanto sei interessato a conoscere le palestre e i corsi vicino a te?" : int
+	return json({'message': 'Interests inserted successfully'}), 201
+
+
+route "/homepage"
+	method : GET
+		"jwt": token
+	return json({"WellHub": valore_WellHub, "4Books": valore_4Books, "Stimulus": valore_Stimulus, "JoJob": valore_JoJob, "FlexibleBenefits": valore_FlexibleBenefits, "Agreements": Valore_Agreements})
